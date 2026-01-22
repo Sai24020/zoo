@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Dialog & Details</title>
+  </head>
+
+  <body>
+    <!-- Inbyggda tillgängliga HTML-element -->
+
+    <details>
+      <summary>Visa mer</summary>
+      <p>Här är extra information!</p>
+    </details>
+
+    <dialog open>
+      <p>Det här är en dialogruta.</p>
+    </dialog>
+
+    <!-- Knapp för att öppna modal -->
+    <button id="openDialog">Visa info</button>
+
+    <!-- Modal dialog -->
+    <dialog id="info">
+      <p>Hej! Jag är ett modalt fönster.</p>
+      <button id="closeDialog">Stäng</button>
+    </dialog>
+
+    <script src="/js/test.js"></script>
+  </body>
+</html>

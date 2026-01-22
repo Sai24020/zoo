@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Madrid Zoo Aquarium Webbsida" />
+    <title>Madrid Zoo Aquarium</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-inner">
+        <img
+          src="img/Logo_Zoo-Aquarium-Madrid-blanco.png"
+          alt="Madrid Zoo Logo"
+          class="logo"
+        />
+        <nav>
+          <ul class="nav">
+            <li><a href="index.html">Hem</a></li>
+            
+            <li><a href="cat.html">Katt</a></li>
+            <li><a href="dog.html">Hund</a></li>
+            <li><a href="panda.html">PandaBjörn</a></li>
+            <li><a href="animal.html">Djur</a></li>
+              
+            <li><a href="#">Att göra</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <section class="hero">
+      <img
+        src="img/zoo-madrid-comprar-regalo.jpeg"
+        alt="Welcome to Madrid Zoo"
+        fetchpriority="high"
+      />
+
+      <div class="hero-text">
+        <h1>Madrid Zoo Aquarium</h1>
+        <h2>Välkommen till Madrids Aquarium djurpark!</h2>
+      </div>
+    </section>
+
+    <main class="main">
+      <section>
+        <h2 class="title">Våra djur</h2>
+        <h3 class="subtitle">Hundar, katter, hönor och papegojor</h3>
+
+        <div class="gallery-container">
+          <div class="cat-gallery">
+            <img src="img/experiencia-inmersiva.jpg" alt="Katt" />
+            <img src="img/Sustainability-Zoo-Madrid-main.jpg" alt="Höna" />
+            <img src="img/leon.avif" alt="Papegoja" />
+            <img src="img/newsletter-zoo-madrid.jpeg" alt="Hund" />
+            <img src="img/f1.avif" alt="Papegoja" />
+            <img src="img/tortala.avif" alt="Katt" />
+            <img
+              src="img/leones-marinos4.jpg"
+              alt="Diver photographing a large shark underwater with sandy bottom and blue water in background"
+            />
+            <img src="img/g1.avif" alt="Parrot with colorful feathers perched on a branch in a natural woodland setting with green foliage in the background" />
+            <img src="img/giraf.avif" alt="Giraff with long neck and distinctive brown patched coat standing in natural savanna habitat with green vegetation in background" />
+            <img src="img/panda1.avif" alt="Giant panda with black and white fur sitting peacefully in a natural habitat with green bamboo vegetation in the background" />
+            <img src="img/tiger.avif" alt="Tiger with orange and black striped coat walking through a natural habitat with green vegetation in the background" />
+            <img src="img/shark.jpg" alt="Large shark swimming underwater near a diver with camera, sandy ocean floor and blue water in background" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ATT GÖRA -->
+      <section>
+        <h2 class="title">Att Göra</h2>
+        <div class="todo-container">
+          <div class="todo-item" tabindex="0">
+            <img src="img/Logo_Zoo-Aquarium-Madrid-blanco.png" alt="Lek" />
+            <p>Besök vår stora lekpark</p>
+          </div>
+
+          <div class="todo-item" tabindex="0">
+            <img src="img/logoPAM.png" alt="Mat" />
+            <p>Ät gott i våra restauranger</p>
+          </div>
+
+          <div class="todo-item" tabindex="0">
+            <img src="img/warner_logo.png" alt="Djur" />
+            <p>Se alla våra fantastiska djur</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEKTIONER -->
+      <section class="cards">
+        <section>
+          <h2 class="title">Lekpark till barnen</h2>
+          <h3 class="subtitle">En rolig och trygg plats för hela familjen</h3>
+        </section>
+
+        <section>
+          <h2 class="title">Restauranger</h2>
+          <h3 class="subtitle">God mat för alla smaker</h3>
+        </section>
+
+        <section>
+          <h2 class="title">Alla våra fantastiska djur</h2>
+          <h3 class="subtitle">Kom nära naturen</h3>
+        </section>
+      </section>
+
+      <!-- KNAPP -->
+      <button id="showFormBtn">Visa formulär</button>
+
+      <!-- FORMULÄR -->
+      <section id="formSection" hidden>
+        <h2 class="title">Prenumerera på vårt nyhetsbrev</h2>
+
+        <form
+          action="https://http-echo-server.azurewebsites.net"
+          method="POST"
+          class="form"
+        >
+          <label>
+            Förnamn:
+            <input type="text" name="fornamn" required />
+          </label>
+
+          <label>
+            Efternamn:
+            <input type="text" name="efternamn" required />
+          </label>
+
+          <label>
+            Mejladress:
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Ålder:
+            <input type="number" name="alder" min="1" max="120" required />
+          </label>
+
+          <button type="submit">Prenumerera</button>
+        </form>
+      </section>
+
+      <!-- TABELL -->
+      <section>
+        <h1 class="title">Djurtabell</h1>
+
+        <table>
+          <tr>
+            <th>Namn</th>
+            <th>Art</th>
+            <th>Vikt</th>
+            <th>Länk</th>
+          </tr>
+          <tr>
+            <td>Hund</td>
+            <td><img src="img/hund.jpg" alt="Hund" class="small" /></td>
+            <td>25 kg</td>
+            <td>
+              <a href="https://sv.wikipedia.org/wiki/Hund" target="_blank"
+                >Wikipedia</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Katt</td>
+            <td><img src="img/katt.jpg" alt="Katt" class="small" /></td>
+            <td>5 kg</td>
+            <td>
+              <a href="https://sv.wikipedia.org/wiki/Katt" target="_blank"
+                >Wikipedia</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Höna</td>
+            <td><img src="img/hona.jpg" alt="Höna" class="small" /></td>
+            <td>2 kg</td>
+            <td>
+              <a
+                href="https://sv.wikipedia.org/wiki/Tamh%C3%B6na"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Papegoja</td>
+            <td><img src="img/papegoj.jpg" alt="Papegoja" class="small" /></td>
+            <td>1 kg</td>
+            <td>
+              <a href="https://sv.wikipedia.org/wiki/Papegojor" target="_blank"
+                >Wikipedia</a
+              >
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- GOOGLE MAPS -->
+      <section class="map">
+        <h1 class="title">Hitta oss</h1>
+        <!--  <iframe
+        title="myGoogleMaps"
+        src="https://www.google.com/maps?q=Madrid+Zoo+Aquarium+Spain&output=embed"
+        loading="lazy"
+      ></iframe> -->
+        <img src="img/map.png" alt="Google map skärmbild" tabindex="0" />
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <img
+          src="img/Logo_Zoo-Aquarium-Madrid-blanco.png"
+          alt="Logo"
+          class="footer-logo"
+        />
+        <div class="footer-links">
+          <a href="#">Om oss</a>
+          <a href="#">Biljetter</a>
+          <a href="#">Kontakt</a>
+        </div>
+        <div class="social">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">X</a>
+        </div>
+      </div>
+      <p class="copyright">© Suzan Al Majdalawi– 2025 - 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
